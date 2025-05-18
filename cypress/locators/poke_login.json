@@ -1,0 +1,5 @@
+{
+    "email":"#k_email",
+    "password":"#k_password",
+    "enter":"#root > div > div > section > div.style_1_popup_white_in.style_1_popup_white_in_auth > form > button"
+}

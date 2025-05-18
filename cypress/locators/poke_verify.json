@@ -1,0 +1,4 @@
+{
+    "push":"#root > div > div > main > form > div > div.payment_form_card_form_input > input",
+    "pay":"#root > div > div > main > form > div > div.style_1_base_button_payment_body > button"
+}

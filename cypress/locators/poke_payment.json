@@ -1,0 +1,7 @@
+{
+    "number":"#root > div > div > main > form > div > div:nth-child(2) > input",
+    "csv":"#root > div > div > main > form > div > div.payment_form_card_form_inputs > div:nth-child(2) > input",
+    "date":"#root > div > div > main > form > div > div.payment_form_card_form_inputs > div:nth-child(1) > input",
+    "name":"#root > div > div > main > form > div > div.payment_form_card_form_input.payment_form_card_form_input_last > input",
+    "pay":"#root > div > div > main > form > div > div.style_1_base_button_payment_body > button"
+}
