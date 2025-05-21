@@ -10,8 +10,9 @@ import * as success from "../locators/poke_success.json"
 describe('Проверка покупки нового аватара', function () {
     it('e2e тест на покупку нового аватара для тренера', function () {
          cy.visit(data.avatar_url);
-         cy.get(login.email).type('YOUR_LOGIN');                   // вводим логин
-         cy.get(login.password).type('YOUR_PASSWORD');               // вводим пароль
+         cy.wait(2000);
+         cy.get(login.email).type('LOGIN');                   // вводим логин
+         cy.get(login.password).type('PASSWORD');               // вводим пароль
          cy.get(login.enter).click();                // нажимаем кнопку Подтвердить
          cy.wait(2000);
          cy.get(main.trainer).click();            // Клик в шапке на аву тренера
@@ -23,6 +24,7 @@ describe('Проверка покупки нового аватара', function
          cy.get(payment.date).type(data.avatar_date);                           // вводим срок действия карты
          cy.get(payment.name).type(data.avatar_name);                           // вводим имя владельца карты
          cy.get(payment.pay).click();     // нажимаем кнопку Оплатить
+         cy.wait(2000);
          cy.get(verify.push).type(data.avatar_push);                            // вводим код подтверждения СМС
          cy.get(verify.pay).click();   // нажимаем кнопку Оплатить
          cy.get(success.title).should('be.visible');     // проверяем наличие и видимость сообщения об успешной покупке
